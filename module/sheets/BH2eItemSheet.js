@@ -9,7 +9,7 @@ export default class BH2eItemSheet  extends ItemSheet {
 
     /** @override */
     get template() {
-        return(`systems/bh2e/templates/sheets/${this.item.type}-sheet.html`);
+        return(`systems/bh2e-fork/templates/sheets/${this.item.type}-sheet.html`);
     }
 
     /** @override */

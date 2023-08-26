@@ -89,7 +89,7 @@ export default class AttackRollDialog extends Dialog {
             settings.title    = game.i18n.localize(`bh2e.dialogs.titles.attackRoll`);
             settings.actorId  = actor.id;
             settings.weaponId = weaponId;
-            return(renderTemplate("systems/bh2e/templates/dialogs/attack-roll-dialog.html", data)
+            return(renderTemplate("systems/bh2e-fork/templates/dialogs/attack-roll-dialog.html", data)
                        .then((content) => {
                                  settings.content = content;
                                  return(new AttackRollDialog(settings));

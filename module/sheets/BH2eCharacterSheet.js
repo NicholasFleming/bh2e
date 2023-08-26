@@ -19,13 +19,13 @@ export default class BH2eCharacterSheet extends ActorSheet {
         return(mergeObject(super.defaultOptions,
                            {classes:  ["bh2e", "sheet", "character"],
                             height:   825,
-                            template: "systems/bh2e/templates/sheets/character-sheet.html",
+                            template: "systems/bh2e-fork/templates/sheets/character-sheet.html",
                             width:    800}));
     }
 
     /** @override */
     get template() {
-        return(`systems/bh2e/templates/sheets/character-sheet.html`);
+        return(`systems/bh2e-fork/templates/sheets/character-sheet.html`);
     }
 
     /** @override */

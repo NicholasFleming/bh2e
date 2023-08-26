@@ -33,7 +33,7 @@ export function castMagic(event) {
                 } else {
                     message.roll.labels.result = interpolate("bh2e.messages.labels.failure");
                 }
-                showMessage(actor, "systems/bh2e/templates/messages/cast-magic.hbs", message);
+                showMessage(actor, "systems/bh2e-fork/templates/messages/cast-magic.hbs", message);
                 item.update(data);
             });
     } else {
@@ -70,7 +70,7 @@ export function castMagicAsRitual(event) {
                 } else {
                     message.roll.labels.result = interpolate("bh2e.messages.labels.failure");
                 }
-                showMessage(actor, "systems/bh2e/templates/messages/cast-magic.hbs", message);
+                showMessage(actor, "systems/bh2e-fork/templates/messages/cast-magic.hbs", message);
             });
     } else {
         console.error(`Failed to locate an actor linked to item id ${element.dataset.id}.`)

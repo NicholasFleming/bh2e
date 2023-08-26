@@ -5,20 +5,20 @@ import BH2eCharacterSheet from './module/sheets/BH2eCharacterSheet.js';
 import BH2eCreatureSheet from './module/sheets/BH2eCreatureSheet.js';
 
 async function preloadHandlebarsTemplates() {
-    const paths = ["systems/bh2e/templates/partials/ability-details.hbs",
-                   "systems/bh2e/templates/partials/ability-entry.hbs",
-                   "systems/bh2e/templates/partials/armour-details.hbs",
-                   "systems/bh2e/templates/partials/armour-entry.hbs",
-                   "systems/bh2e/templates/partials/attribute-details.hbs",
-                   "systems/bh2e/templates/partials/attribute-list.hbs",
-                   "systems/bh2e/templates/partials/creature-ability-entry.hbs",
-                   "systems/bh2e/templates/partials/creature-attack-entry.hbs",
-                   "systems/bh2e/templates/partials/equipment-entry.hbs",
-                   "systems/bh2e/templates/partials/prayer-entry.hbs",
-                   "systems/bh2e/templates/partials/spell-entry.hbs",
-                   "systems/bh2e/templates/partials/toggle-collapse-widget.hbs",
-                   "systems/bh2e/templates/partials/weapon-details.hbs",
-                   "systems/bh2e/templates/partials/weapon-entry.hbs"];
+    const paths = ["systems/bh2e-fork/templates/partials/ability-details.hbs",
+                   "systems/bh2e-fork/templates/partials/ability-entry.hbs",
+                   "systems/bh2e-fork/templates/partials/armour-details.hbs",
+                   "systems/bh2e-fork/templates/partials/armour-entry.hbs",
+                   "systems/bh2e-fork/templates/partials/attribute-details.hbs",
+                   "systems/bh2e-fork/templates/partials/attribute-list.hbs",
+                   "systems/bh2e-fork/templates/partials/creature-ability-entry.hbs",
+                   "systems/bh2e-fork/templates/partials/creature-attack-entry.hbs",
+                   "systems/bh2e-fork/templates/partials/equipment-entry.hbs",
+                   "systems/bh2e-fork/templates/partials/prayer-entry.hbs",
+                   "systems/bh2e-fork/templates/partials/spell-entry.hbs",
+                   "systems/bh2e-fork/templates/partials/toggle-collapse-widget.hbs",
+                   "systems/bh2e-fork/templates/partials/weapon-details.hbs",
+                   "systems/bh2e-fork/templates/partials/weapon-entry.hbs"];
     return(loadTemplates(paths))
 }
 

@@ -21,7 +21,7 @@ export default class InfoDialog extends Dialog {
 
         settings.title = game.i18n.localize(`bh2e.dialogs.info.title`);
 
-        return(renderTemplate("systems/bh2e/templates/dialogs/info-dialog.html", data)
+        return(renderTemplate("systems/bh2e-fork/templates/dialogs/info-dialog.html", data)
                    .then((content) => {
                              settings.content = content;
                              return(new InfoDialog(settings));

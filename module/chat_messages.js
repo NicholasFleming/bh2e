@@ -84,7 +84,7 @@ export function logAttackRoll(actorId, weaponId, options={}) {
                     if(game.dice3d) {
                         game.dice3d.showForRoll(roll);
                     }
-                    showMessage(actor, "systems/bh2e/templates/messages/attack-roll.hbs", data);
+                    showMessage(actor, "systems/bh2e-fork/templates/messages/attack-roll.hbs", data);
                 });
         } else {
             console.error(`Unable to locate weapon id '${weaponId} on actor '${actor.name}'.`);
@@ -123,7 +123,7 @@ export function logAttributeTest(actorId, attribute, shiftKey=false, ctrlKey=fal
                     game.dice3d.showForRoll(roll);
                 }
 
-                showMessage(actor, "systems/bh2e/templates/messages/attribute-test.hbs", data);
+                showMessage(actor, "systems/bh2e-fork/templates/messages/attribute-test.hbs", data);
             });
     } else {
         console.error(`Unable to locate an actor with the id '${actorId}'.`);
@@ -153,7 +153,7 @@ export function logDamageRoll(event) {
                 if(game.dice3d) {
                     game.dice3d.showForRoll(roll);
                 }
-                showMessage(actor, "systems/bh2e/templates/messages/damage-roll.hbs", data)
+                showMessage(actor, "systems/bh2e-fork/templates/messages/damage-roll.hbs", data)
             });
     } else {
         console.error("Damage roll requested but requesting element did not have a damage formula attribute.");
@@ -242,7 +242,7 @@ export function logUsageDieRoll(itemId) {
                             message.roll.labels.result = interpolate("bh2e.messages.labels.success");
                         }
 
-                        showMessage(actor, "systems/bh2e/templates/messages/usage-die.hbs", message);
+                        showMessage(actor, "systems/bh2e-fork/templates/messages/usage-die.hbs", message);
                     });
             } else {
                 console.error(`The usage die for the '${item.name}' item is already exhausted.`);
