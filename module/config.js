@@ -29,6 +29,12 @@ BH2e.hitDieTypes = {
     d20: "bh2e.dice.d20"
 };
 
+BH2e.luckDieTypes = {
+    d4:  "bh2e.dice.d4",
+    d6:  "bh2e.dice.d6",
+    d8:  "bh2e.dice.d8"
+};
+
 BH2e.magicAttributeList = {
     default:      "bh2e.fields.labels.attributes.default.long",
     strength:     "bh2e.fields.labels.attributes.strength.long",

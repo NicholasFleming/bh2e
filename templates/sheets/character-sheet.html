@@ -75,8 +75,20 @@
                         <label class="bh2e-label" for="system.coins">{{localize "bh2e.fields.labels.coinsValue"}}</label>
                         <input style="text-align: center;" type="number" name="system.coins" value="{{system.coins}}" />
                     </div>
+                    <div class="bh2e-horizontal-field bh2e-horizontal-field-select-narrow">
+                        <label for="system.luckDie" class="bh2e-label">{{localize "bh2e.fields.labels.luckDie"}}</label>
+                        <select name="system.luckDie" class="bh2e-select">
+                        {{#select system.luckDie}}
+                        {{#each config.luckDieTypes as |label value|}}
+                            <option value="{{value}}">{{localize label}}</option>
+                        {{/each}}
+                        {{/select}}
+                        </select>
+                    </div>
                 </div>
+
             </div>
+            
 
             <div class="bh2e-tabs-container" data-default="bh2e-basics-tab" data-key="cs.tabs.selected">
                 <div class="bh2e-tab bh2e-selected-tab" data-default="true" data-tab="bh2e-basics-tab">

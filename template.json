@@ -17,6 +17,7 @@
       },
       "description": "",
       "hitDie": "d6",
+      "luckDie": "d8",
       "hitPoints": {"max": 1, "value": 1},
       "level": 1,
       "playerName": ""

@@ -22,23 +22,23 @@
 			"headers": {
 				"abilities": "Capacidades",
 				"armour": "Armadura",
-				"background": "Descripción",
+				"background": "Descripciï¿½n",
 				"equipment": "Equipo",
 				"weapons": "Armas"
 			},
 			"labels": {
 				"abilities": "Capacidades",
-				"armedDamage": "Daño con armas",
-				"armourValue": "Valor de protección",
+				"armedDamage": "Daï¿½o con armas",
+				"armourValue": "Valor de protecciï¿½n",
 				"attacks": "Ataques",
-				"attribute": "Características",
+				"attribute": "Caracterï¿½sticas",
 				"attributes": {
 					"charisma": {
 						"long": "Carisma",
 						"short": "CAR"
 					},
 					"constitution": {
-						"long": "Constitución",
+						"long": "Constituciï¿½n",
 						"short": "CON"
 					},
 					"default": {
@@ -58,7 +58,7 @@
 						"short": "FUE"
 					},
 					"wisdom": {
-						"long": "Sabiduría",
+						"long": "Sabidurï¿½a",
 						"short": "SAB"
 					}
 				},
@@ -67,19 +67,20 @@
 				"className": "Clase",
 				"coinsValue": "Monedas",
 				"currentUsageDie": "Dado actual",
-				"damage": "Daño",
-				"description": "Descripción",
+				"damage": "Daï¿½o",
+				"description": "Descripciï¿½n",
 				"dice": "Dados",
 				"exhausted": "Agotado",
 				"hitDice": "Dados de golpe",
 				"hitDie": "Dado de golpe",
+				"luckDie": "Dado de fortuno",
 				"hitPoints": "Puntos de golpe",
-				"hitPointsMax": "PG máximos",
+				"hitPointsMax": "PG mï¿½ximos",
 				"hitPointsValue": "PG actuales",
 				"key": "Key",
-				"largeWeapon": "¿Arma grande?",
+				"largeWeapon": "ï¿½Arma grande?",
 				"level": "Nivel",
-				"magicAttribute": "Característica",
+				"magicAttribute": "Caracterï¿½stica",
 				"magicKind": "Tipo",
 				"magicLevel": "Nivel",
 				"name": "Nombre",
@@ -90,17 +91,17 @@
 				"quantity": "Cantidad",
 				"range": "Alcance",
 				"rarity": "Rareza",
-				"size": "Tamaño",
+				"size": "Tamaï¿½o",
 				"tag": "Etiqueta",
 				"targetQuantity": "Cantidad de objetivos",
-				"testAttribute": "Característica",
+				"testAttribute": "Caracterï¿½stica",
 				"totalDice": "Dados totales",
 				"type": "Tipo",
-				"unarmedDamage": "Daño desarmado",
+				"unarmedDamage": "Daï¿½o desarmado",
 				"usageDie": "Dado de uso",
 				"weapon": "Arma",
 				"weaponKind": "Tipo",
-				"weaponSize": "Tamaño"
+				"weaponSize": "Tamaï¿½o"
 			},
 			"placeholders": {
 				"name": "Introduce un nombre"
@@ -124,11 +125,11 @@
 				"preparePrayer": "Preparar esta plegaria",
 				"prepareSpell": "Preparar este conjuro",
 				"repairAllArmourDie": "Reparar todos los objetos armadura",
-				"repairArmourDie": "Reparar un único dado de este objeto",
+				"repairArmourDie": "Reparar un ï¿½nico dado de este objeto",
 				"resetAllUsageDice": "Restablecer todos los Dados de uso",
 				"resetUsageDie": "Restablecer Dado de uso",
 				"rollAttack": "Tirada de ataque",
-				"rollAttributeTest": "Tirada de prueba de característica",
+				"rollAttributeTest": "Tirada de prueba de caracterï¿½stica",
 				"rollUsageDie": "Tirada de Dado de uso",
 				"spellAlreadyCast": "El conjuro ya se ha lanzado al menos una vez",
 				"unprepared": "No preparado",
@@ -147,51 +148,51 @@
 		},
 		"messages": {
 			"attributeTestFailed": "La prueba fue un fallo.",
-			"attributeTestSuccess": "La prueba fue un éxito.",
+			"attributeTestSuccess": "La prueba fue un ï¿½xito.",
 			"attacking": "%NAME% ataca con %WEAPON%",
 			"attackMiss": "...pero falla.",
 			"blurbs": {
 				"attacksWith": "Ataca con",
 				"casts": "Lanza el conjuro",
 				"castsRitual": "Intenta lanzarlo como un ritual",
-				"damageInflicted": "Daño infligido",
-				"spellLost": "Este conjuro ya no está preparado ni disponible para su uso.",
-				"spellMiscast": "El conjuro no se lanza y el lanzador debe tirar en la tabla de Efectos secundarios mágicos.",
+				"damageInflicted": "Daï¿½o infligido",
+				"spellLost": "Este conjuro ya no estï¿½ preparado ni disponible para su uso.",
+				"spellMiscast": "El conjuro no se lanza y el lanzador debe tirar en la tabla de Efectos secundarios mï¿½gicos.",
 				"usageDie": "Tirando el Dado de uso para",
 				"usageDieDowngrade": "El Dado de uso desciende a:",
 				"usageDieExhausted": "El Dado de uso se ha agotado para:"
 			},
-			"criticalHit": "...y causa un impacto crítico. Tirando daño...",
+			"criticalHit": "...y causa un impacto crï¿½tico. Tirando daï¿½o...",
 			"errors": {
 				"supplyDepleted": "No se puede restablecer el dado de uso para %ITEM% dado que el recurso se ha agotado.",
-				"usageDieExhausted": "El Dado de uso de %ITEM% ya está agotado."
+				"usageDieExhausted": "El Dado de uso de %ITEM% ya estï¿½ agotado."
 			},
 			"labels": {
 				"buttons": {
-					"rollDamage": "Tirada de daño"
+					"rollDamage": "Tirada de daï¿½o"
 				},
-				"critical": "¡Impacto crítico!",
+				"critical": "ï¿½Impacto crï¿½tico!",
 				"failure": "Fracaso",
-				"hit": "¡Impacto!",
+				"hit": "ï¿½Impacto!",
 				"miss": "Fallo",
-				"success": "Éxito"
+				"success": "ï¿½xito"
 			},
-			"normalHit": "...e impacta. Tirando daño...",
+			"normalHit": "...e impacta. Tirando daï¿½o...",
 			"reducingUsageDie": "Dado de uso descendido a %DIE%.",
-			"rollingAttributeTest": "%NAME% está realizando una prueba de característica de %ATTRIBUTE%...",
+			"rollingAttributeTest": "%NAME% estï¿½ realizando una prueba de caracterï¿½stica de %ATTRIBUTE%...",
 			"rollingUsageDie": "Tirando el Dado de uso para %NAME%.",
 			"titles": {
 				"attackRoll": "Tirada de ataque",
 				"attributeTest": "Prueba: %ATTRIBUTE%",
-				"damageRoll": "Tirada de daño",
+				"damageRoll": "Tirada de daï¿½o",
 				"failure": "Fallo",
 				"formula": "Tirada",
 				"roll": "Resultado",
-				"success": "Éxito",
+				"success": "ï¿½xito",
 				"test": "Prueba:",
 				"usageDie": "Dado de uso"
 			},
-			"usageDieExhausted": "El Dado de uso para tu %NAME% está agotado."
+			"usageDieExhausted": "El Dado de uso para tu %NAME% estï¿½ agotado."
 		},
 		"ranges": {
 			"close": "Inmediato",
@@ -201,8 +202,8 @@
 			"special": "Especial"
 		},
 		"rarities": {
-			"common": "Común",
-			"exotic": "Exótico",
+			"common": "Comï¿½n",
+			"exotic": "Exï¿½tico",
 			"rare": "Raro"
 		},
 		"rolls": {
@@ -213,7 +214,7 @@
 		"settings": {
 			"options": {
 				"randomizeHP": {
-					"blurb": "Indica si las criaturas añadidas a las escenas tendrán sus PG generados aleatoriamente.",
+					"blurb": "Indica si las criaturas aï¿½adidas a las escenas tendrï¿½n sus PG generados aleatoriamente.",
 					"title": "Aleatorizar PG de la criatura"
 				}
 			}
@@ -221,7 +222,7 @@
 		"tabs": {
 			"labels": {
 				"background": "Trasfondo",
-				"basics": "Información básica",
+				"basics": "Informaciï¿½n bï¿½sica",
 				"prayers": "Plegarias",
 				"spells": "Conjuros"
 			},
