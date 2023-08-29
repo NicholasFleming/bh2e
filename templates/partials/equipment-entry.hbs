@@ -44,5 +44,10 @@
         <a class="bh2e-action-link" href="#" title="{{localize "bh2e.fields.titles.deleteEquipment"}}">
             <i class="far fa-trash-alt bh2e-delete-item-icon" data-id="{{_id}}"></i>
         </a>
+     {{#if (eq system.equipped false)}}    
+        <a class="bh2e-action-link" href="#" title="{{localize 'bh2e.fields.titles.equip'}}">
+            <i class="far fa-user-shield bh2e-equip-item-icon" data-id="{{_id}}"></i>
+        </a>
+    {{/if}}
     </div>
 </div>

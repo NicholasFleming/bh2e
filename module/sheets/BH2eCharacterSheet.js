@@ -5,6 +5,7 @@ import {castMagic,
         prepareMagic,
         unprepareMagic} from '../magic.js';
 import {deleteOwnedItem,
+        findItemFromId,
         findActorFromItemId,
         generateDieRollFormula,
         initializeCharacterSheetUI,
@@ -53,6 +54,7 @@ export default class BH2eCharacterSheet extends ActorSheet {
         html.find(".bh2e-roll-attribute-test-icon").click(this._onRollAttributeTest.bind(this));
         html.find(".bh2e-roll-usage-die-icon").click(this._onRollUsageDieClicked.bind(this));
         html.find(".bh2e-delete-item-icon").click(this._onDeleteItemClicked.bind(this));
+        html.find(".bh2e-equip-item-icon").click(this._onEquipItemClicked.bind(this));
         html.find(".bh2e-break-armour-die-icon").click(this._onBreakArmourDieClicked.bind(this));
         html.find(".bh2e-repair-armour-die-icon").click(this._onRepairArmourDieClicked.bind(this));
         html.find(".bh2e-repair-all-armour-dice-icon").click(this._onRepairAllArmourDiceClicked.bind(this));
@@ -253,7 +255,38 @@ export default class BH2eCharacterSheet extends ActorSheet {
         return(false);
     }
 
-    _onDecreaseEquipmentQuantityClicked(evemt) {
+    _onEquipItemClicked(event) {
+        let element = event.currentTarget;
+
+        event.preventDefault();
+        if(element.dataset.id) {
+            console.log(`toggling equipped state for item id ${element.dataset.id}.`);
+            let actor = findActorFromItemId(element.dataset.id);
+            if(actor) {
+                let item  = actor.items.find(i => i.id === element.dataset.id);
+                if(item) {
+                    console.log("ITEM: " + JSON.stringify(item))
+                    let data = {id: item.id,
+                                data: {
+                                    equipped: !item.system.equipped
+                                }};
+
+                    item.update(data, {diff: true});
+                    
+                } else {
+                    console.error(`Failed to find item id ${element.dataset.id}.`);
+                }
+            } else {
+              console.error(`Failed to find an actor that owns item id ${element.dataset.id}.`);
+            }
+        } else {
+            console.error(`Element had no item id on it.`)
+        }
+
+        return(false);
+    }
+
+    _onDecreaseEquipmentQuantityClicked(event) {
         let element = event.currentTarget;
 
         event.preventDefault();
@@ -271,7 +304,7 @@ export default class BH2eCharacterSheet extends ActorSheet {
         return(false);
     }
 
-    _onIncreaseEquipmentQuantityClicked(evemt) {
+    _onIncreaseEquipmentQuantityClicked(event) {
         let element = event.currentTarget;
 
         event.preventDefault();

@@ -15,7 +15,7 @@
 
 .bh2e-armour-entry {
 	display: grid;
-	grid-template-columns: 45% 20% 20% 15%;
+	grid-template-columns: 40% 20% 20% 20%;
 	margin: 3px 0;
 }
 
