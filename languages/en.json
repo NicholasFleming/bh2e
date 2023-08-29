@@ -84,6 +84,7 @@
 				"hitPointsValue": "HP Current",
 				"key": "Key",
 				"largeWeapon": "Large Weapon?",
+				"equipped": "Equipped?",
 				"level": "Level",
 				"magicAttribute": "Attribute",
 				"magicKind": "Type",

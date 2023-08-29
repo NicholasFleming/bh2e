@@ -48,6 +48,7 @@ export default class BH2eCharacterSheet extends ActorSheet {
 
         initializeCharacterSheetUI(window.bh2e.state);
 
+        // TODO Add unequip action here
         html.find(".bh2e-roll-attack-icon").click(this._onRollAttackClicked.bind(this));
         html.find(".bh2e-roll-attribute-test-icon").click(this._onRollAttributeTest.bind(this));
         html.find(".bh2e-roll-usage-die-icon").click(this._onRollUsageDieClicked.bind(this));
@@ -89,7 +90,13 @@ export default class BH2eCharacterSheet extends ActorSheet {
                     break;
 
                 case "armour":
-                    armour.push(item);
+                    console.log(JSON.stringify(item))
+                    if (item.system.equipped) {
+                        armour.push(item);
+                    } else {
+                        equipment.push(item);
+                    }
+                    
                     break;
 
                 case "class":
@@ -122,14 +129,20 @@ export default class BH2eCharacterSheet extends ActorSheet {
                     break;
 
                 case "weapon":
-                    weapons.push({actorId:     this.actor.id,
-                                  attribute:   item.system.attribute,
-                                  description: item.system.description,
-                                  id:          item._id,
-                                  kind:        item.system.kind,
-                                  name:        item.name,
-                                  rarity:      item.system.rarity,
-                                  size:        item.system.size});
+                    console.log(JSON.stringify(item))
+                    if (item.system.equipped) {
+                        weapons.push({actorId:     this.actor.id,
+                            attribute:   item.system.attribute,
+                            description: item.system.description,
+                            id:          item._id,
+                            kind:        item.system.kind,
+                            name:        item.name,
+                            equipped:    item.system.equipped,
+                            rarity:      item.system.rarity,
+                            size:        item.system.size});
+                    } else {
+                        equipment.push(item);
+                    }
                     break;
 
                 default:

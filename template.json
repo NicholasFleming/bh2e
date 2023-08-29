@@ -45,6 +45,7 @@
         "total": 1,
         "broken": 0
       },
+      "equipped": false,
       "templates": ["itemBasics"]
     },
     "creature-attack": {
@@ -74,6 +75,7 @@
       "attribute": "strength",
   	  "kind": "melee",
       "size": "normal",
+      "equipped": false,
   		"templates" : ["itemBasics"]
   	}
   }
